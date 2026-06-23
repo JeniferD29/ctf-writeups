@@ -25,14 +25,14 @@ The login form uses the `/login` endpoint. To identify the password for the user
 ```bash
 hydra -l molly -P Tools/wordlists/rockyou.txt <TARGET_IP> http-post-form "/login:username=^USER^&password=^PASS^:F=incorrect"
 ```
+### Command Explanation
 
-Command Explanation:
--l molly specifies the target username.
--P Tools/wordlists/rockyou.txt provides the password wordlist.
-http-post-form indicates that the target is a web form using HTTP POST requests.
-/login is the authentication endpoint.
-username=^USER^&password=^PASS^ defines the form parameters that Hydra will populate during the attack.
-F=incorrect tells Hydra that a login attempt has failed when the word "incorrect" appears in the server response.
+- `-l molly` specifies the target username.
+- `-P Tools/wordlists/rockyou.txt` specifies the password wordlist.
+- `http-post-form` targets a web login form using HTTP POST requests.
+- `/login` is the authentication endpoint.
+- `username=^USER^&password=^PASS^` defines the form parameters.
+- `F=incorrect` indicates a failed login attempt.
 
 Once valid credentials were identified, they were used to successfully authenticate to the application and complete the challenge.
 
