@@ -45,6 +45,8 @@ Use the credentials to log in.
 
 
 
+
+
 <img width="940" height="360" alt="image" src="https://github.com/user-attachments/assets/85763882-387f-474d-80a1-b510df35544c" />
 
 
@@ -73,6 +75,8 @@ ssh molly@<TARGET_IP>
 
 
 
+
+
 <img width="453" height="126" alt="image" src="https://github.com/user-attachments/assets/c3cce4f6-87a5-48bb-adcb-28ec7571927b" />
 
 
@@ -87,9 +91,9 @@ This room provided hands-on experience with Hydra and demonstrated how password 
 - Brute-forcing SSH authentication
 - Understanding Hydra command syntax and modules
 
-Thank you for reading!
 
-Happy Learning and Happy Hacking!
+
+Happy Hacking!
 
 
 
