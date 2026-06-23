@@ -43,9 +43,7 @@ Use the credentials to log in.
 
 <img width="615" height="771" alt="image" src="https://github.com/user-attachments/assets/b17262fa-8b40-4a3d-8a5f-f0ae3e2ff238" />
 
-
-
-
+<br><br>
 
 <img width="940" height="360" alt="image" src="https://github.com/user-attachments/assets/85763882-387f-474d-80a1-b510df35544c" />
 
@@ -72,10 +70,7 @@ ssh molly@<TARGET_IP>
 
 <img width="784" height="703" alt="image" src="https://github.com/user-attachments/assets/9bc4be64-50ab-4d0c-8d84-0e0bfd66b9df" />
 
-
-
-
-
+<br><br>
 
 <img width="453" height="126" alt="image" src="https://github.com/user-attachments/assets/c3cce4f6-87a5-48bb-adcb-28ec7571927b" />
 
