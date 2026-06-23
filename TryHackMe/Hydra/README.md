@@ -13,4 +13,6 @@ Hydra is a popular password-cracking tool used to perform brute-force and dictio
 Question 1: Use Hydra to bruteforce molly’s web password. What is flag 1?
 
 when we put the target ip address in the browser - we got a login page 
+
+
 <img width="940" height="625" alt="image" src="https://github.com/user-attachments/assets/f01b593f-78e2-4a9c-8330-e5dd720bd0bc" />
