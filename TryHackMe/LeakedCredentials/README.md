@@ -43,8 +43,6 @@ Disallow: /devshop
 
 ## Task 3: Directory Enumeration
 
-Objective
-
 Identify hidden directories within the development site.
 
 Gobuster was used to enumerate directories.
@@ -69,7 +67,6 @@ Browsing to the backups directory revealed an archived configuration file.
 ```bash
 http://TARGET_IP/devshop/backups
 ```
-
 
 <img width="534" height="192" alt="image" src="https://github.com/user-attachments/assets/683fed0d-502c-4314-a453-0620788d400f" />
 
@@ -103,8 +100,6 @@ $db_pass="ShopEase@2025";
 
 ## Task 5: Initial Access
 
-Objective
-
 Use the exposed credentials to access the target via SSH.
 
 ```bash
@@ -132,8 +127,6 @@ Output:
 THM{shopping_access_granted}
 
 ## Task 7: Privilege Escalation
-
-Objective
 
 Escalate privileges to obtain root access.
 
