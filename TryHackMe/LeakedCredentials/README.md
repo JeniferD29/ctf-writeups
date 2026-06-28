@@ -81,6 +81,8 @@ Download the archive.
 wget http://TARGET_IP/devshop/backups/config_old.zip
 ```
 
+
+
 Extract its contents.
 
 <img width="542" height="146" alt="image" src="https://github.com/user-attachments/assets/b2f095fa-899d-4df2-8d34-42e1ad7ee6f8" />
@@ -90,13 +92,15 @@ Extract its contents.
 unzip config_old.zip
 ```
 
+
 Inside the extracted configuration file were exposed database credentials.
+
 
 <img width="314" height="218" alt="image" src="https://github.com/user-attachments/assets/3bef6040-5ec0-41e4-a1a7-7fad89fcd75f" />
 
 
-$db_user="webadmin";
-$db_pass="ShopEase@2025";
+- $db_user="webadmin";
+- $db_pass="ShopEase@2025";
 
 ## Task 5: Initial Access
 
