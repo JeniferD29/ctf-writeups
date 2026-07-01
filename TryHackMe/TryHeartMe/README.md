@@ -18,7 +18,7 @@ and there was no visible feature or functionality that allowed users to earn or 
 
 
 
-<p>Let’s start this room and see how we got the flag, first of all let’s just do an Nmap scan to see if there is any open ports which could help us in sorting this CTF.</p>>
+<p>Let’s start this room and see how we got the flag, first of all let’s just do an Nmap scan to see if there is any open ports which could help us in sorting this CTF.</p>
 
 <img width="806" height="395" alt="image" src="https://github.com/user-attachments/assets/95a24d6e-84cf-49ab-a747-f69931218096" />
 <br>
