@@ -207,9 +207,6 @@ Password-cracking tools such as **Hashcat** perform significantly faster on a **
 
 
 
-<img width="602" height="474" alt="image" src="https://github.com/user-attachments/assets/8892178a-4275-4b00-ad80-230e39d372e9" />
-
-
 ## Conclusion
 
 This room provided hands-on experience with wireless penetration testing by covering WPA/WPA2 authentication, monitor mode, packet capture, and offline password cracking using the Aircrack-ng suite. It also reinforced the importance of strong passwords and secure wireless configurations.
