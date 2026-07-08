@@ -25,4 +25,4 @@ The walkthroughs are intended for educational purposes and to document my contin
 
 > **Note:** All exercises were completed in authorized TryHackMe lab environments.
 
-Happy Hacking
+**HAPPY HACKING!**
