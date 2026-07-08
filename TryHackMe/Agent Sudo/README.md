@@ -12,12 +12,8 @@ This write-up documents my approach to solving the room, explaining each step, t
 <img width="940" height="527" alt="image" src="https://github.com/user-attachments/assets/e15c0b5e-5e79-478c-bd34-5ea99a2756ea" />
 
 
-1 How many open ports?
 
-Ans: 3
-
-
-Task 2 - Enumeration
+## Task 2 - Enumeration
 
 After deploying the machine, the first step was to perform enumeration to identify the services running on the target. I started by scanning the machine with Nmap to discover open ports, detect service versions, and gather additional information.
 
@@ -33,9 +29,7 @@ Upon opening the webpage, a message stated that agents must use their own codena
 
 <img width="906" height="296" alt="image" src="https://github.com/user-attachments/assets/444cbede-0345-4711-96f1-78c17f9f3e59" />
 
-How you redirect yourself to a secret page?
 
-Ans: user-agent
 
 After opening the website in the browser, the homepage displayed a message indicating that **agents must use their own codename as the User-Agent** to access the site. This suggested that the web server was checking the HTTP **User-Agent** header and responding differently based on its value.
 
