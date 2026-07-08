@@ -185,4 +185,4 @@ This room demonstrates how exposed development resources and improperly secured 
 - Enumerated the Linux system to identify privilege escalation opportunities.
 - Exploited an insecure sudo configuration using GTFOBins to obtain root access.
 
-Happy Hacking!
+**HAPPY HACKING!**
