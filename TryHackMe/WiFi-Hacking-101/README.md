@@ -222,4 +222,4 @@ This room provided hands-on experience with wireless penetration testing by cove
 * Recognizing the performance advantage of GPU-based password cracking.
 
 
-Happy Hacking!
+**HAPPY HACKING!**
