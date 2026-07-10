@@ -1,9 +1,10 @@
 # TryHackMe Rooms Created
 
-This directory contains the custom TryHackMe rooms I have designed and developed as part of my cybersecurity learning journey.
+This directory contains custom TryHackMe rooms designed to provide hands-on, interactive cybersecurity challenges. These rooms simulate real-world scenarios across various domains, enabling learners to develop practical skills in a safe and controlled environment.
 
-## Available Rooms
+Each room includes the necessary resources and documentation to support the learning experience.
 
-| Room | Description |
-|------|-------------|
-| Leaked Credentials | A room focused on credential discovery and enumeration. 
+
+
+
+**HAPPY HACKING!**
