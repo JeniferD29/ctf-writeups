@@ -2,14 +2,14 @@
 
 ## CTF Writeups Portfolio
 
-TryHackMe, PicoCTF, Hack The Box, and Pentesting Labs
+TryHackMe, PicoCTF and Pentesting Labs
 
 ## About Me
 
 - Cybersecurity Graduate (2025)
 - Interested in Penetration Testing
 - Learning Red Team Operations
-- Active on TryHackMe, PicoCTF and Hack The Box
+- Active on TryHackMe and PicoCTF 
 
 ## Skills
 
@@ -28,9 +28,6 @@ Writeups and learning notes from THM rooms.
 
 ### PicoCTF
 Capture The Flag challenge solutions and methodology.
-
-### Hack The Box
-Machine walkthroughs and attack methodology.
 
 ## Contact
 
