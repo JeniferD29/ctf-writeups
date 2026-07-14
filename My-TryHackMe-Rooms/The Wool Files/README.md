@@ -74,3 +74,18 @@ cat flag.txt
 ```
 
 <img width="811" height="266" alt="image" src="https://github.com/user-attachments/assets/d8e70dac-70ba-4a8c-af03-b602c17dd627" />
+
+
+
+## Conclusion
+
+This room demonstrated a simple digital forensics investigation using three common forensic tools. By examining image metadata, extracting hidden data from a JPEG, and uncovering an embedded archive within a PNG, we successfully recovered the final flag.
+
+## Key Learnings
+
+- Inspecting image metadata using `exiftool`
+- Extracting hidden files with `steghide`
+- Discovering embedded archives using `binwalk`
+- Following a basic digital forensics investigation workflow
+
+**HAPPY HACKING! 🚀**
