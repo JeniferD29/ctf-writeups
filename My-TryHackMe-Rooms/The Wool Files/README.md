@@ -23,9 +23,7 @@ exiftool IMG_4021.png
 
 
 
-The metadata reveals a comment containing Professor Woolsworth's favorite passphrase:
-
-**Passphrase:** `WoolNeverLies`
+The metadata reveals a comment containing Professor Woolsworth's favorite passphrase.
 
 
 ## Task 2 — The Barn Locker
