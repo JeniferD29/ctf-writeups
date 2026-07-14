@@ -19,7 +19,8 @@ Since the room focuses on digital forensics, the first step is to examine the me
 exiftool IMG_4021.png
 ```
 
-<img width="940" height="361" alt="image" src="https://github.com/user-attachments/assets/82764b5e-ab4e-4a27-b7b2-ffcf90069609" />
+<img width="821" height="317" alt="image" src="https://github.com/user-attachments/assets/f2b7f08a-8817-4230-b0ba-73eb2f388ce2" />
+
 
 
 The metadata reveals a comment containing Professor Woolsworth's favorite passphrase:
@@ -35,11 +36,7 @@ Using the passphrase obtained from the metadata, we can extract the hidden data 
 steghide extract -sf IMG_4022.jpg
 ```
 
-When prompted, enter the passphrase:
-
-```text
-WoolNeverLies
-```
+When prompted, enter the passphrase.
 
 The extraction creates a file named `note.txt`. Display its contents using:
 
