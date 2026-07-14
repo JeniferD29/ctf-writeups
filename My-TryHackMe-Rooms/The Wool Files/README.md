@@ -73,8 +73,4 @@ Among the extracted files is `flag.txt`. Display its contents to obtain the fina
 cat flag.txt
 ```
 
-```text
-flag
-```
-
 <img width="811" height="266" alt="image" src="https://github.com/user-attachments/assets/d8e70dac-70ba-4a8c-af03-b602c17dd627" />
