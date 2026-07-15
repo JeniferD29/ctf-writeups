@@ -53,6 +53,13 @@ The common.txt wordlist, located at /usr/share/wordlists/dirb/common.txt on Kali
 The discovered directories provided valuable information about the web application and guided the next stage of the assessment.
 
 
+<img width="737" height="486" alt="panle" src="https://github.com/user-attachments/assets/d547d456-cc1a-4ed9-9e7e-647b07a44265" />
+
+This gives us a /panel directory.
+
+
+
+
 
 
 
