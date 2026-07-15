@@ -119,7 +119,57 @@ I find the user flag in the “/var/www” directory.
 
 <img width="219" height="117" alt="image" src="https://github.com/user-attachments/assets/e040ea68-ca79-4dd5-a2d9-5e7a50928c5e" />
 
+## Task 4 - Privilege Escalation
 
+After obtaining an initial shell, the next objective was to escalate privileges and gain root access.
+
+Enumerating SUID Binaries
+
+A common privilege escalation technique is to search for files with the SUID (Set User ID) permission enabled, as misconfigured SUID binaries can sometimes be exploited to execute commands with elevated privileges.
+
+To enumerate SUID files, I ran:
+
+find / -perm -u=s -type f 2>/dev/null
+
+The output listed several SUID binaries. Among them, /usr/bin/python2.7 stood out as it is known to be exploitable under certain configurations.
+
+<img width="535" height="352" alt="image" src="https://github.com/user-attachments/assets/e24b3dfb-6489-433b-8a84-0ac9ca4e6a6e" />
+
+Exploiting the SUID Python Binary:
+
+To verify whether this binary could be abused, I referred to GTFOBins, a well-known resource that documents legitimate binaries which can be used for privilege escalation when improperly configured.
+
+The following command was used to spawn a shell while preserving elevated privileges:
+
+     /usr/bin/python -c 'import os; os.execl("/bin/sh", "sh", "-p")'
+
+Upon successful execution, the shell was spawned with root privileges.
+
+To confirm the privilege escalation, I executed:
+
+whoami
+
+Capture the Root Flag
+
+After obtaining root privileges, I navigated to the root user's home directory.
+
+cd /root
+
+List the files:
+
+ls
+
+Output:
+
+root.txt
+
+Finally, display the contents of the root flag.
+
+cat root.txt
+
+The root flag was successfully captured, completing the room.
+
+<img width="729" height="637" alt="image" src="https://github.com/user-attachments/assets/66a54da4-9ac6-448c-ab98-9595607a320e" />
 
 
 
