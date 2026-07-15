@@ -1,4 +1,4 @@
-Root Me | TryHackMe Write-up
+## Root Me | TryHackMe Write-up
 
 ## Introduction
 
@@ -6,7 +6,7 @@ Root Me is an easy-level TryHackMe room designed to introduce the fundamentals o
 
 This walkthrough documents the methodology I followed, the tools used, and the reasoning behind each step—from reconnaissance and web enumeration to exploitation and privilege escalation—to successfully capture both the user and root flags.
 
-Task 1 – Deploy the Machine
+## Task 1 – Deploy the Machine
 
 Once the target machine is deployed, only the IP address is provided. With no prior knowledge of the environment, the first step is to perform reconnaissance to discover the exposed services, identify open ports, and gather information that can be used in the later stages of the assessment.
 
@@ -14,7 +14,7 @@ Once the target machine is deployed, only the IP address is provided. With no pr
 
 With only the target IP address available, the first step is to perform reconnaissance to identify open ports and running services.
 
-Task 2 – Enumeration
+## Task 2 – Reconnaisance
 
 I began by scanning the target using Nmap with the following command:
 
@@ -36,8 +36,6 @@ The presence of an Apache web server indicates that the web application is likel
 <img width="802" height="382" alt="image" src="https://github.com/user-attachments/assets/f828ef18-10f6-4588-9834-89140ddab2ae" />
 
 
-Task 3 - Directory Enumeration
-
 To discover hidden files and directories hosted by the web server, I performed directory enumeration using Gobuster.
 
 gobuster dir -u http://<TARGET_IP> -w /usr/share/wordlists/dirb/common.txt
@@ -56,6 +54,20 @@ The discovered directories provided valuable information about the web applicati
 <img width="737" height="486" alt="panle" src="https://github.com/user-attachments/assets/d547d456-cc1a-4ed9-9e7e-647b07a44265" />
 
 This gives us a /panel directory.
+
+## Task 3 - Getting a Shell
+
+Step 1: Access the Upload Panel
+
+Open your browser and navigate to:
+
+http://<TARGET_IP>/panel/
+
+You should see a file upload page.
+
+
+<img width="975" height="587" alt="panel" src="https://github.com/user-attachments/assets/079b70dd-62cb-48af-85e0-7312dc5172ac" />
+
 
 
 
