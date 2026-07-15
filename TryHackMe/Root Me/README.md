@@ -65,7 +65,9 @@ Step 1: Access the Upload Panel
 
 Open your browser and navigate to:
 
+```bash
 http://<TARGET_IP>/panel/
+```
 
 You should see a file upload page.
 
