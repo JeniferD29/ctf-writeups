@@ -31,5 +31,5 @@ Capture The Flag challenge solutions and methodology.
 
 ## Contact
 
-LinkedIn: www.linkedin.com/in/jenifercatherined
+LinkedIn: https://www.linkedin.com/in/jenifercatherined/
 GitHub: https://github.com/JeniferD29
