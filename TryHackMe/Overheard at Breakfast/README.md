@@ -4,6 +4,8 @@
 
 Before diving into the challenge, the room presents us with a seemingly ordinary breakfast conversation. At first glance, it appears to be nothing more than a casual exchange between two individuals. However, hidden within the conversation are several clues that can be used to identify a person through publicly available information. Since no technical exploitation is involved, the challenge requires careful observation, logical analysis, and the effective use of OSINT techniques to uncover the intended attack path and ultimately retrieve the flag.
 
+
+
 <img width="602" height="319" alt="image" src="https://github.com/user-attachments/assets/925dd1ce-5312-46ff-a045-b84c2416b27d" />
 
 ## Analyzing the Provided File
@@ -14,6 +16,10 @@ At first, the chat appears to be a normal conversation, but on closer inspection
 
 <img width="354" height="105" alt="image" src="https://github.com/user-attachments/assets/641d6d25-8109-4ea4-990f-1c2c8a91f22a" />
 
+
+
+
+
 <img width="602" height="400" alt="image" src="https://github.com/user-attachments/assets/cbfb77a0-9c93-4538-8396-21adb34ef3b7" />
 
 ## Examining the Conversation
@@ -21,6 +27,7 @@ At first, the chat appears to be a normal conversation, but on closer inspection
 I carefully read through the conversation and found that, although most of it was casual, it contained a few valuable OSINT clues. Two details immediately stood out:
 
 * An email address: **[lambobytelotushotel@gmail.com](mailto:lambobytelotushotel@gmail.com)**
+  
 * A mention of a free platform that allows users to upload a profile and link their social media accounts, with its name starting with the letter **"G"**.
 
 These clues provided a good starting point for the investigation.
@@ -34,7 +41,10 @@ Based on this hint, I searched for profile platforms that matched the descriptio
 
 The search results pointed me to **Gravatar**, a service that lets users create a public profile associated with their email address. This matched the clue perfectly, so I proceeded with Gravatar to continue the investigation.
 
+
 <img width="602" height="179" alt="image" src="https://github.com/user-attachments/assets/02559b12-bc1b-49e6-8aa4-50d62ca90a6f" />
+
+
 
 ## Finding the Gravatar Profile
 
@@ -52,6 +62,7 @@ After opening the Gravatar profile, I examined the publicly available informatio
 
 The text resembled a Base64-encoded value, suggesting that it might contain the hidden flag or another important clue. The next step was to decode this string and see what information it revealed.
 
+
 <img width="530" height="352" alt="image" src="https://github.com/user-attachments/assets/f75eea44-92fb-495f-8b84-23c24e03d884" />
 
 
@@ -60,7 +71,9 @@ To determine what the encoded text contained, I copied the string from the Grava
 I then applied the From Base64 operation to decode the value. The decoded output revealed the room flag, successfully completing the challenge.
 
 
+
 <img width="602" height="263" alt="image" src="https://github.com/user-attachments/assets/aa8db9c7-526f-4154-9b25-ae2ef0959041" />
+
 
 
 
