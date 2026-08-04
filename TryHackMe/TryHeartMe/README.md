@@ -142,7 +142,7 @@ This room demonstrated how an insecure JWT implementation can lead to privilege 
 * Decoding and modifying JWTs
 * Understanding JWT-based privilege escalation
 
-**HAPPY HACKING!**
+**HAPPY HACKING!🚀**
 
 
 
