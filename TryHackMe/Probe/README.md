@@ -214,4 +214,4 @@ The Probe room demonstrates the importance of thorough reconnaissance and servic
 - Retrieved service banners using **Netcat**.
 - Collected information from exposed web resources and configuration pages.
 
-**HAPPY HACKING!**
+**HAPPY HACKING!🚀**
