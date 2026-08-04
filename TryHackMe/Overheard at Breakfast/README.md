@@ -89,7 +89,7 @@ This room demonstrated how valuable **Open Source Intelligence (OSINT)** can be 
 * Recognizing and decoding **Base64-encoded** data using **CyberChef**.
 * Understanding how publicly shared information can reveal more than intended.
 
-**HAPPY HACKING!**
+**HAPPY HACKING!🚀**
 
 
 
