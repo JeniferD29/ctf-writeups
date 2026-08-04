@@ -88,7 +88,7 @@ This room provided hands-on experience with Hydra and demonstrated how password 
 
 
 
-**HAPPY HACKING!**
+**HAPPY HACKING!🚀**
 
 
 
