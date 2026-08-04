@@ -181,10 +181,7 @@ During the conversion, useful information such as the **BSSID** and **ESSID** of
 Using the generated **HCCAPX** file and the **RockYou** wordlist, Aircrack-ng performed an offline dictionary attack to recover the wireless password.
 
 ```bash
-aircrack-ng -a2 \
--b <BSSID> \
--w /usr/share/wordlists/rockyou.txt \
-wifi.hccapx
+aircrack-ng -a2 -b <BSSID> -w /usr/share/wordlists/rockyou.txt wifi.hccapx
 ```
 
 
@@ -222,4 +219,4 @@ This room provided hands-on experience with wireless penetration testing by cove
 * Recognizing the performance advantage of GPU-based password cracking.
 
 
-**HAPPY HACKING!**
+**HAPPY HACKING!🚀**
