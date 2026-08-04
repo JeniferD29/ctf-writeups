@@ -1,3 +1,5 @@
+## Overheard at Breakfast — TryHackMe CTF Walkthrough
+
 ## Introduction
 
 Before diving into the challenge, the room presents us with a seemingly ordinary breakfast conversation. At first glance, it appears to be nothing more than a casual exchange between two individuals. However, hidden within the conversation are several clues that can be used to identify a person through publicly available information. Since no technical exploitation is involved, the challenge requires careful observation, logical analysis, and the effective use of OSINT techniques to uncover the intended attack path and ultimately retrieve the flag.
