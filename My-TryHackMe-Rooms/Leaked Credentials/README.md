@@ -87,10 +87,13 @@ Extract its contents.
 
 <img width="542" height="146" alt="image" src="https://github.com/user-attachments/assets/b2f095fa-899d-4df2-8d34-42e1ad7ee6f8" />
 
+<br>
+
 
 ```bash
 unzip config_old.zip
 ```
+<br>
 
 
 Inside the extracted configuration file were exposed database credentials.
@@ -185,4 +188,4 @@ This room demonstrates how exposed development resources and improperly secured 
 - Enumerated the Linux system to identify privilege escalation opportunities.
 - Exploited an insecure sudo configuration using GTFOBins to obtain root access.
 
-**HAPPY HACKING!**
+**HAPPY HACKING!🚀**
